@@ -21,3 +21,30 @@ for( let row = 0 ; row < MAX_ROWS ; ++row) {
     for( line = "" ; line.length <= row ; line = line += "*") {}
     console.log(line)
 }
+
+/** ************************************************************** */
+
+console.log("While Loop Example\n");
+const STOP_2 = 10;
+let i2 = 0;
+while(i2 < STOP_2) {
+  console.log(i2++);
+}
+
+console.log("Employee Salaries (Exercise)\n");
+let index_2 = 0;
+while(index_2  < employees.length) {
+  let name = employees[index_2];
+  let salary = employeeSalary[index_2];
+  console.log(`${name} $${salary}`);
+  index_2++;
+}
+
+console.log("Print Triangle (Exercise)\n");
+const MAX_ROWS_2 = 6;
+let row_2 = 0;
+let line_2 = "";
+while(row_2++ < MAX_ROWS_2) {
+    line_2 += "*"
+    console.log(line_2);
+}
