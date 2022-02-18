@@ -1,5 +1,4 @@
-
-console.log("For Loop Example\n")
+console.log("For Loop Example\n");
 const STOP = 10;
 for (let i = 0; i < STOP; ++i) {
   console.log(i);
@@ -16,10 +15,10 @@ for (let index = 0; index < employees.length; ++index) {
 
 console.log("Print Triangle (Exercise)\n");
 const MAX_ROWS = 6;
-for( let row = 0 ; row < MAX_ROWS ; ++row) {
-    let line;
-    for( line = "" ; line.length <= row ; line = line += "*") {}
-    console.log(line)
+for (let row = 0; row < MAX_ROWS; ++row) {
+  let line;
+  for (line = ""; line.length <= row; line = line += "*") {}
+  console.log(line);
 }
 
 /** ************************************************************** */
@@ -27,13 +26,13 @@ for( let row = 0 ; row < MAX_ROWS ; ++row) {
 console.log("While Loop Example\n");
 const STOP_2 = 10;
 let i2 = 0;
-while(i2 < STOP_2) {
+while (i2 < STOP_2) {
   console.log(i2++);
 }
 
 console.log("Employee Salaries (Exercise)\n");
 let index_2 = 0;
-while(index_2  < employees.length) {
+while (index_2 < employees.length) {
   let name = employees[index_2];
   let salary = employeeSalary[index_2];
   console.log(`${name} $${salary}`);
@@ -44,7 +43,7 @@ console.log("Print Triangle (Exercise)\n");
 const MAX_ROWS_2 = 6;
 let row_2 = 0;
 let line_2 = "";
-while(row_2++ < MAX_ROWS_2) {
-    line_2 += "*"
-    console.log(line_2);
+while (row_2++ < MAX_ROWS_2) {
+  line_2 += "*";
+  console.log(line_2);
 }
