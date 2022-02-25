@@ -1,4 +1,4 @@
-// Object literal Syntax
+// Object Literal Syntax
 
 let user = {
   id: 1,
@@ -22,6 +22,24 @@ console.log(user.hasOwnProperty("name"));
 user.caca = "Esto es una mierda!";
 console.log(user);
 
+// Object Literal Enhancement 
+
+let role = "Developer";
+let employed = false;
+let vacation = "89";
+let message = function () {
+  console.log(`${role} position has ${vacation} days of vacations`);
+}
+
+let employee = {
+  role,
+  employed,
+  vacation,
+  message
+}
+
+console.log(employee);
+employee.message();
 
 // Object Constructor
 
