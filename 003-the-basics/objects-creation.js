@@ -57,6 +57,11 @@ console.log(numObject);
 
 // Object Constructor
 
+let customer = new Object();
+customer.name = "Maximiliano";
+customer.salary = 1000.00;
+console.log(customer);
+
 // Assign() Method
 
 // ES6 Classes
