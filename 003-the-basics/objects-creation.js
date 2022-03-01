@@ -64,21 +64,45 @@ console.log(customer);
 
 // Object Constructor Function
 
-function EmployeeEmployee(id, salary, raise) {
-  this.id = id;
-  this.salary = salary;
-  this.raise = raise;
-}
-console.log(new EmployeeEmployee(1, 3000, "H"));
-console.log(new EmployeeEmployee(2, 4000, "A"));
-
 function Dessert(name, calories, flavor, helpings) {
   this.name = name;
   this.calories = calories;
   this.flavor = flavor;
   this.helpings = helpings;
+
+  this.totalCall = function () {
+    console.log(`totals ${this.flavor * this.helpings}.`);
+  };
 }
 
+let dessert = new Dessert("LALALA", 30, 10, 4);
+console.log(dessert);
+dessert.totalCall();
+
+// Object.create Method
+let parentObj = {
+  descent: "Scottish descent",
+  diabetes: false,
+};
+
+let childObj = Object.create(parentObj, {});
+console.log(childObj);
+
 // Assign() Method
+
+let sourceObj1 = {
+  id_1: 1,
+};
+
+let sourceObj2 = {
+  id_2: 2,
+};
+
+let sourceObj3 = {
+  id_3: 3,
+};
+
+let targetObj = Object.assign({}, sourceObj1, sourceObj2, sourceObj3);
+console.log(targetObj);
 
 // ES6 Classes
