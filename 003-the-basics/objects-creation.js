@@ -22,21 +22,21 @@ console.log(user.hasOwnProperty("name"));
 user.caca = "Esto es una mierda!";
 console.log(user);
 
-// Object Literal Enhancement 
+// Object Literal Enhancement
 
 let role = "Developer";
 let employed = false;
 let vacation = "89";
 let message = function () {
   console.log(`${role} position has ${vacation} days of vacations`);
-}
+};
 
 let employee = {
   role,
   employed,
   vacation,
-  message
-}
+  message,
+};
 
 console.log(employee);
 employee.message();
@@ -48,10 +48,10 @@ let num2 = 20;
 let num3 = 30;
 
 let numObject = {
-  [ num1 + 1 ] : num1,
-  [ num2 + 1 ] : num2,
-  [ num3 + 1 ] : num3
-}
+  [num1 + 1]: num1,
+  [num2 + 1]: num2,
+  [num3 + 1]: num3,
+};
 
 console.log(numObject);
 
@@ -59,7 +59,7 @@ console.log(numObject);
 
 let customer = new Object();
 customer.name = "Maximiliano";
-customer.salary = 1000.00;
+customer.salary = 1000.0;
 console.log(customer);
 
 // Object Constructor Function
@@ -69,9 +69,15 @@ function EmployeeEmployee(id, salary, raise) {
   this.salary = salary;
   this.raise = raise;
 }
-console.log(new EmployeeEmployee(1,3000,"H"));
-console.log(new EmployeeEmployee(2,4000,"A"));
+console.log(new EmployeeEmployee(1, 3000, "H"));
+console.log(new EmployeeEmployee(2, 4000, "A"));
 
+function Dessert(name, calories, flavor, helpings) {
+  this.name = name;
+  this.calories = calories;
+  this.flavor = flavor;
+  this.helpings = helpings;
+}
 
 // Assign() Method
 
