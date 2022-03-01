@@ -62,6 +62,17 @@ customer.name = "Maximiliano";
 customer.salary = 1000.00;
 console.log(customer);
 
+// Object Constructor Function
+
+function EmployeeEmployee(id, salary, raise) {
+  this.id = id;
+  this.salary = salary;
+  this.raise = raise;
+}
+console.log(new EmployeeEmployee(1,3000,"H"));
+console.log(new EmployeeEmployee(2,4000,"A"));
+
+
 // Assign() Method
 
 // ES6 Classes
