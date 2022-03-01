@@ -106,3 +106,23 @@ let targetObj = Object.assign({}, sourceObj1, sourceObj2, sourceObj3);
 console.log(targetObj);
 
 // ES6 Classes
+
+class Character {
+  constructor(food, energy, points) {
+    this.food = food;
+    this.energy = energy;
+    this.points = points;
+  }
+
+  friendship() {
+    return this.energy + this.points;
+  }
+}
+
+let tomNook = new Character("bread", 100, 2340);
+let kidCat = new Character("milk", 10, 1340);
+let baaBara = new Character("apples", 40, 1870);
+
+console.log(tomNook);
+console.log(kidCat);
+console.log(baaBara);
