@@ -80,6 +80,7 @@ console.log(dessert);
 dessert.totalCall();
 
 // Object.create Method
+
 let parentObj = {
   descent: "Scottish descent",
   diabetes: false,
