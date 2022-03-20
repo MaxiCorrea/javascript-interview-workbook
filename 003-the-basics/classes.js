@@ -39,3 +39,26 @@ class Customer {
 
 Customer.staticMethod();
 // new Customer("Max").staticMethod(); // TypeError "staticMethod" is not a function
+
+// Public Fields
+
+class PublicField {
+  constructor(age) {
+    this.age = age;
+  }
+}
+
+let publicFieldInstance = new PublicField(30);
+console.log(publicFieldInstance.age);
+
+// Default Initialization
+class Human {
+  name = "Max";
+  age = 30;
+  jobName = "FullStack Developer";
+  constructor() {}
+}
+
+console.log( new Human().jobName);
+
+//Private Fields
