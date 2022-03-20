@@ -62,3 +62,22 @@ class Human {
 console.log( new Human().jobName);
 
 //Private Fields
+class Entry {
+  #key;
+  #value;
+  constructor(key, value) {
+    this.#key = key;
+    this.#value = value;
+  }
+  getKey() {
+    return this.#key;
+  }
+  getValue() {
+    return this.#value;
+  }
+}
+
+let entry = new Entry(1,"Maxi");
+console.log(entry.getKey());
+console.log(entry.getValue());
+
