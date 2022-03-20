@@ -59,7 +59,7 @@ class Human {
   constructor() {}
 }
 
-console.log( new Human().jobName);
+console.log(new Human().jobName);
 
 //Private Fields
 class Entry {
@@ -77,7 +77,31 @@ class Entry {
   }
 }
 
-let entry = new Entry(1,"Maxi");
+let entry = new Entry(1, "Maxi");
 console.log(entry.getKey());
 console.log(entry.getValue());
 
+// Private Static Field
+
+class StartupEmployeeList {
+  static #MAX_NUMBER_OF_INSTANCES = 3;
+  static #instancesCounter = 0;
+  #name;
+  constructor(name) {
+    if (
+      ++StartupEmployeeList.#instancesCounter ===
+      StartupEmployeeList.#MAX_NUMBER_OF_INSTANCES
+    ) {
+      throw new Error("Max number of instances Error");
+    }
+    this.#name = name;
+  }
+  getName() {
+    return this.#name;
+  }
+}
+
+console.log( new StartupEmployeeList("Max-1").getName());
+console.log( new StartupEmployeeList("Max-2").getName());
+//console.log( new StartupEmployeeList("Max-3").getName()); // Maxi number of instances Error
+ 
