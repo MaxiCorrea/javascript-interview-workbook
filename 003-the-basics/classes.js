@@ -105,3 +105,34 @@ console.log( new StartupEmployeeList("Max-1").getName());
 console.log( new StartupEmployeeList("Max-2").getName());
 //console.log( new StartupEmployeeList("Max-3").getName()); // Maxi number of instances Error
  
+// Inheritance with extends keyword
+class BaseClass {
+  #name;
+  constructor(name) {
+    this.#name = name;
+  }
+  getName() {
+    return this.#name;
+  }
+  toString() {
+    return `${this.#name}`
+  }
+}
+
+class SubClass extends BaseClass {
+  #power;
+  constructor(name, power) {
+    super(name);
+    this.#power = power;
+  }
+  getPower() {
+    return this.#power;
+  }
+  toString() {
+    return `${super.toString()} - ${this.#power}`;
+  }
+}
+
+let superMax = new SubClass("Max","Power");
+console.log(superMax.toString());
+console.log(Object.keys(superMax)); // only public fields
