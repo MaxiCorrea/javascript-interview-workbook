@@ -15,14 +15,14 @@ console.log(trunck.getColor());
 
 // get & set keyword , Class with private fields
 class User {
-    #name;
-    constructor(name, age) {
-        this.name = name;
-    }
-    get name (){
-        return this.#name;
-    }
-    set name (name) {
-        this.#name = name;
-    }
+  #name;
+  constructor(name, age) {
+    this.name = name;
+  }
+  get name() {
+    return this.#name;
+  }
+  set name(name) {
+    this.#name = name;
+  }
 }
