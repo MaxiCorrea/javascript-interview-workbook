@@ -135,4 +135,41 @@ class SubClass extends BaseClass {
 
 let superMax = new SubClass("Max","Power");
 console.log(superMax.toString());
-console.log(Object.keys(superMax)); // only public fields
+console.log(Object.keys(superMax)); // only public fields 
+
+// Instance Of
+class User {
+  #name;
+  constructor(name) {
+    this.name = name;
+  }
+  getName() {
+    return this.#name;
+  }
+}
+
+let user1 = new User("Maximiliano");
+let user2 = "Any";
+console.log(user1 instanceof User); // true
+console.log(user2 instanceof User); // false
+
+class Admin extends User {
+  #privileges;
+  constructor(privileges) {
+    super("Super User");
+    this.#privileges = privileges
+  }
+  getPrivileges() {
+    return this.#privileges;
+  }
+}
+
+let user3 = new Admin("Login");
+console.log(user3 instanceof User); // true
+console.log(user3 instanceof Admin); // true
+
+// Constructor Property
+
+
+
+
