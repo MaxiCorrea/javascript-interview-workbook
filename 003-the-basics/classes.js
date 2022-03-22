@@ -168,8 +168,10 @@ let user3 = new Admin("Login");
 console.log(user3 instanceof User); // true
 console.log(user3 instanceof Admin); // true
 
-// Constructor Property
+// Constructor Property (Check exact class of object)
 
+console.log(user3.constructor === User); // false
+console.log(user3.constructor === Admin); // true
 
 
 
