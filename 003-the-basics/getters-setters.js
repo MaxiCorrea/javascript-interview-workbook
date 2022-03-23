@@ -26,3 +26,15 @@ class User {
     this.#name = name;
   }
 }
+
+// Object.definePropertieMethod
+
+let propertyDescriptor = {
+  configurable: false,
+  enumerable: false,
+  writable: false,
+  value: 300,
+};
+
+Object.defineProperty(trunck, "width", propertyDescriptor);
+console.log(trunck.width);
