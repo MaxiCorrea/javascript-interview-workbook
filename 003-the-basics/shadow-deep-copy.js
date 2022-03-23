@@ -44,3 +44,19 @@ let obj2 = {
 };
 let objs = { ...obj1, ...obj2 };
 console.log(objs);
+
+// Shallow Copy with Object.assign Method
+let sourceObject = {
+  key1: "value 1",
+  key2: "value 2",
+};
+
+let targetObject = {
+  key3: "value 3",
+};
+targetObject = Object.assign(targetObject, sourceObject);
+console.log(targetObject);
+
+// Merge Object properties with Object.assign Method
+let objs2 = Object.assign({}, obj1 , obj2);
+console.log(objs2);
