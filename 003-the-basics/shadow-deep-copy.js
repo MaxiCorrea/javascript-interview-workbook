@@ -60,3 +60,7 @@ console.log(targetObject);
 // Merge Object properties with Object.assign Method
 let objs2 = Object.assign({}, obj1 , obj2);
 console.log(objs2);
+
+let oo1 = {}
+let oo2 = {}
+console.log(oo1 === oo2);
