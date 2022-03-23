@@ -1,6 +1,6 @@
 // Default Method Syntax Getter & Setter
 
-let trunck = {
+let truck = {
   color: "red",
   getColor: function () {
     return this.color;
@@ -9,9 +9,9 @@ let trunck = {
     this.color = color;
   },
 };
-console.log(trunck.getColor());
-trunck.setColor("blue");
-console.log(trunck.getColor());
+console.log(truck.getColor());
+truck.setColor("blue");
+console.log(truck.getColor());
 
 // get & set keyword , Class with private fields
 class User {
@@ -30,9 +30,17 @@ class User {
 // Object.definePropertieMethod
 let propertyDescriptor = {
   configurable: false,
-  enumerable: false,
+  enumerable: true,
   writable: false,
   value: 300,
 };
-Object.defineProperty(trunck, "width", propertyDescriptor);
-console.log(trunck.width);
+Object.defineProperty(truck, "width", propertyDescriptor);
+console.log(truck);
+
+Object.defineProperty(truck, "getWidth", {
+  enumerable: true,
+  get: function () {
+    return this.width;
+  },
+});
+console.log(truck);
