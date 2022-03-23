@@ -64,3 +64,12 @@ console.log(objs2);
 let oo1 = {}
 let oo2 = {}
 console.log(oo1 === oo2);
+
+// Deep Copy with  JSON.stringify & JSON.parse
+let customer = {
+    name : "Max Power",
+    salary : 10000000
+};
+let customerCopy = JSON.stringify(customer);
+console.log(customerCopy); // string
+console.log(JSON.parse(customerCopy)); // javascript object
