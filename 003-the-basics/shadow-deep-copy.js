@@ -32,3 +32,15 @@ let console3 = {
 let console4 = { ...console3 };
 console.log(console3);
 console.log(console4);
+
+// Merge Object properties with Spread Operator
+let obj1 = {
+  one: "value 1",
+  two: "value 2",
+};
+let obj2 = {
+  six: "value 6",
+  seven: "value 7",
+};
+let objs = { ...obj1, ...obj2 };
+console.log(objs);
