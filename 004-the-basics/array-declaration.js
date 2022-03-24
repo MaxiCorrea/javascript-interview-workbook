@@ -20,5 +20,6 @@ console.log(myArray2.length)
 console.log(myArray2[1]); // undefined
 myArray2[1] = "Maxi";
 console.log(myArray2); 
+console.log(Object.getOwnPropertyNames(myArray2));
 
 // Array.of Factory Method
