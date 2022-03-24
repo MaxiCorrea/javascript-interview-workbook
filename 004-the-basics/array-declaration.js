@@ -9,5 +9,16 @@ console.log(fruitsArray[4]);
 
 // Array Constructor
 
+let myArray1 = new Array();
+console.log(myArray1);
+console.log(myArray1.length)
+console.log(myArray1[1]); // undefined
+console.log();
+let myArray2 = new Array(5);
+console.log(myArray2);
+console.log(myArray2.length)
+console.log(myArray2[1]); // undefined
+myArray2[1] = "Maxi";
+console.log(myArray2); 
 
 // Array.of Factory Method
