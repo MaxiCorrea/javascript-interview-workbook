@@ -8,7 +8,6 @@ console.log(fruitsArray[2]);
 console.log(fruitsArray[4]);
 
 // Array Constructor
-
 let myArray1 = new Array();
 console.log(myArray1);
 console.log(myArray1.length)
@@ -23,3 +22,6 @@ console.log(myArray2);
 console.log(Object.getOwnPropertyNames(myArray2));
 
 // Array.of Factory Method
+let myArray3 = Array.of(1,2,3,4,5,6);
+console.log(myArray3);
+
