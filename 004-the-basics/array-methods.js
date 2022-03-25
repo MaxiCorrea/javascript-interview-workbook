@@ -55,3 +55,15 @@ let array7 = [1,2,3];
 console.log(array7);
 array7.splice(0, 2);
 console.log(array7);// 3
+
+// Using delete keyword
+let array8 = [1,2,3];
+console.log(array8);
+delete array8[1]; // set undefined in [1] position of array
+console.log(array8);
+
+// Reset Array
+let array9 = [1,2,3];
+console.log(array9);
+array9.length = 0;
+console.log(array9);
