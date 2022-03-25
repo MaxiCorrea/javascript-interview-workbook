@@ -49,3 +49,9 @@ console.log(queue.shift());
 console.log(queue.shift());
 console.log(queue.shift());
 console.log(queue);
+
+// Deleting with Array.prototype.splice
+let array7 = [1,2,3];
+console.log(array7);
+array7.splice(0, 2);
+console.log(array7);// 3
