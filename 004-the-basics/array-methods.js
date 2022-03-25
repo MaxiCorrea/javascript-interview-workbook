@@ -27,3 +27,25 @@ let array5 = [4,5,6];
 console.log(array5);
 let array6 = array4.concat(array5);
 console.log(array6);
+
+// Array.prototype.pop
+let stack = [];
+stack.push(1);
+stack.push(2);
+stack.push(3);
+console.log(stack);
+console.log(stack.pop());
+console.log(stack.pop());
+console.log(stack.pop());
+console.log(stack);
+
+// Array.prototype.shift
+let queue = [];
+queue.push(1)
+queue.push(2);
+queue.push(3);
+console.log(queue);
+console.log(queue.shift());
+console.log(queue.shift());
+console.log(queue.shift());
+console.log(queue);
