@@ -19,3 +19,11 @@ array3.splice(1, 0, "1", "2");
 console.log(array3); //  a , 1 , 2 , b , c
 array3.splice(1, 2, "1", "2");
 console.log(array3); //  a , 1 , 2 , b , c
+
+// Array.prototype.concat
+let array4 = [1,2,3];
+console.log(array4);
+let array5 = [4,5,6];
+console.log(array5);
+let array6 = array4.concat(array5);
+console.log(array6);
