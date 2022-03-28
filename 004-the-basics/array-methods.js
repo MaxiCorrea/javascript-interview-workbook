@@ -67,3 +67,9 @@ let array9 = [1,2,3];
 console.log(array9);
 array9.length = 0;
 console.log(array9);
+
+//  Changing Array Elements
+let ids = [208, 937,344];
+console.log(ids);
+ids[0] = 10
+console.log(ids);
