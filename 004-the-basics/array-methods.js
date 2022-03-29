@@ -125,3 +125,14 @@ hasAllOne = [1, 1, 1, 2, 1, 1].every((value) => {
   return value === 1;
 });
 console.log(hasAllOne);
+
+// Array.prototype.sort
+let numbers = [5, 0, 300, 10000, -2];
+numbers.sort((a, b) => {
+  return a - b;
+});
+console.log(numbers);
+numbers.sort((a, b) => {
+  return -(a - b);
+});
+console.log(numbers);
