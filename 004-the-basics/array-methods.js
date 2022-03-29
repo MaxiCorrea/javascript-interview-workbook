@@ -85,3 +85,27 @@ let values = ["A", "B", "C", "D"];
 values.forEach((current, index, array) => {
   console.log(`${current} -> ${index} -> ${array}`);
 });
+
+// Array.prototype.some
+let team = [
+  {
+    name: "Kenna",
+    role: "frontend",
+  },
+  {
+    name: "Ray",
+    role: "backend",
+  },
+  {
+    name: "Buztos",
+    role: "designer",
+  },
+  {
+    name: "Jim",
+    role: "security",
+  },
+];
+let hasDesigner = team.some((item) => {
+  return item.role === "designer";
+});
+console.log(hasDesigner);
