@@ -115,3 +115,13 @@ let backend = team.find((item) => {
   return item.role === "backend";
 });
 console.log(backend);
+
+// Array.prototype.every
+let hasAllOne = [1, 1, 1, 1, 1, 1].every((value) => {
+  return value === 1;
+});
+console.log(hasAllOne);
+hasAllOne = [1, 1, 1, 2, 1, 1].every((value) => {
+  return value === 1;
+});
+console.log(hasAllOne);
