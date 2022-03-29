@@ -109,3 +109,9 @@ let hasDesigner = team.some((item) => {
   return item.role === "designer";
 });
 console.log(hasDesigner);
+
+// Array.prototype.find
+let backend = team.find((item) => {
+  return item.role === "backend";
+});
+console.log(backend);
