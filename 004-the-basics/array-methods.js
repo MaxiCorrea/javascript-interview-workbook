@@ -79,3 +79,9 @@ let primes = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(primes);
 console.log(primes.slice(0, 5)); // 1,2,3,4,5   <- inclusive end
 console.log(primes.slice(5)); // 6,7,8,9   <-  exclusive start
+
+// Array.prototype.forEach
+let values = ["A", "B", "C", "D"];
+values.forEach((current, index, array) => {
+  console.log(`${current} -> ${index} -> ${array}`);
+});
