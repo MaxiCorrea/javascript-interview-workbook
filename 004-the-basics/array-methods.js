@@ -136,3 +136,7 @@ numbers.sort((a, b) => {
   return -(a - b);
 });
 console.log(numbers);
+
+// Array.prototype.fill
+numbers.fill(-1, 0, 2);
+console.log(numbers);
