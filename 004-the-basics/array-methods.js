@@ -140,3 +140,8 @@ console.log(numbers);
 // Array.prototype.fill
 numbers.fill(-1, 0, 2);
 console.log(numbers);
+
+// Array.prototype.findIndex
+console.log([1,2,3,4,5,6].findIndex((value ) => {
+    return value ===4;
+})); // 3
