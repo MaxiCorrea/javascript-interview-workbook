@@ -17,3 +17,12 @@ function values() {
 }
 let [one, two, three, four] = values();
 console.log(one, two, three, four);
+
+// swap elements with destructuring
+let value1 = 10;
+let value2 = 20;
+console.log(value1);
+console.log(value2);
+[value2 , value1] = [value1, value2];
+console.log(value1);
+console.log(value2);
