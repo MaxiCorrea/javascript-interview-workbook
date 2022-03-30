@@ -12,7 +12,6 @@ console.log(alphabet);
 console.log(seven); // undefined
 
 // destructuring array function
-
 function values() {
   return ["This", "is", "a", "message"];
 }
