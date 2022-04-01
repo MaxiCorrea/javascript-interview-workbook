@@ -24,3 +24,7 @@ console.log(array5Copy);
 let myName = "Maximiliano Correa";
 let chars = [...myName];
 console.log(chars);
+
+//Math Object
+console.log(Math.max(...[23,34,45,345345,345,23,33,234,-3]));
+console.log(Math.min(...[23,34,45,345345,345,23,33,234,-3]));
