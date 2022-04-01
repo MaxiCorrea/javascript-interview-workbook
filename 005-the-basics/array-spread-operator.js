@@ -7,7 +7,9 @@ console.log(array1);
 // Merge Arrays with Spread Operator
 let array2 = [1, 2, 3];
 let array3 = [4, 5, 6];
-let array4 = [...array2, ...array3];
+let array4 = [...array2, ...array3]; 
 console.log(array2);
 console.log(array3);
 console.log(array4);
+//Take note that for larger arrays with more items the spread syntax is slower. Therefore,
+//when dealing with larger data sets it is better use the concat() method.
