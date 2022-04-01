@@ -19,3 +19,8 @@ let array5 = [1,2,3,4,4,45,5,5,5];
 console.log(array5);
 let array5Copy = [...array5];
 console.log(array5Copy);
+
+// Convert string into array
+let myName = "Maximiliano Correa";
+let chars = [...myName];
+console.log(chars);
