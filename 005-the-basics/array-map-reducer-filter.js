@@ -126,5 +126,5 @@ let userData = [
 let keyword = "admin";
 
 console.log(userData.filter((value)=>{
-  return value.type === "admin";
+  return value.type === keyword;
 }));
