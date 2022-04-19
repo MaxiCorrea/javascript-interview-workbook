@@ -92,11 +92,39 @@ let games = [
 ];
 console.log(games);
 
-let pcGames = games.filter((value, index, array)=> {
-  return value.name === "PC"
+let pcGames = games.filter((value, index, array) => {
+  return value.name === "PC";
 });
 console.log(pcGames);
-let nintendoGames = games.filter((value, index, array)=> {
-  return value.name === "Nintendo"
+let nintendoGames = games.filter((value, index, array) => {
+  return value.name === "Nintendo";
 });
 console.log(nintendoGames);
+
+let userData = [
+  {
+    email: "user1@hello",
+    name: "user",
+    type: "regular",
+  },
+  {
+    email: "user2@hello",
+    name: "user ",
+    type: "admin",
+  },
+  {
+    email: "user3@hello",
+    name: "user 3",
+    type: "admin",
+  },
+  {
+    email: "user4@hello",
+    name: "user 4",
+    type: "regular",
+  },
+];
+let keyword = "admin";
+
+console.log(userData.filter((value)=>{
+  return value.type === "admin";
+}));
