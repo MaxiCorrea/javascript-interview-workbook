@@ -64,5 +64,39 @@ let cities = [
   },
 ];
 console.log(cities);
-let totalPopulation = cities.reduce((acc , value) =>  acc + value.population , 0);
+let totalPopulation = cities.reduce((acc, value) => acc + value.population, 0);
 console.log(totalPopulation);
+
+// Filter
+const yummies = [
+  "Ice-cream",
+  "Cupcake",
+  "Donut",
+  "Cupcake",
+  "Ice-cream",
+  "Ice-cream",
+  "Cupcake",
+];
+console.log(yummies);
+let notDuplicatedYummies = yummies.filter((value, index, array) => {
+  return array.indexOf(value) === index;
+});
+console.log(notDuplicatedYummies);
+
+let games = [
+  { name: "Nintendo", game: "Animal Crossing" },
+  { name: "Nintendo", game: "Super Mario" },
+  { name: "PC", game: "Caesar IV" },
+  { name: "Playstation", game: "Grand Theft Auto" },
+  { name: "Playstation", game: "The Sims 4" },
+];
+console.log(games);
+
+let pcGames = games.filter((value, index, array)=> {
+  return value.name === "PC"
+});
+console.log(pcGames);
+let nintendoGames = games.filter((value, index, array)=> {
+  return value.name === "Nintendo"
+});
+console.log(nintendoGames);
