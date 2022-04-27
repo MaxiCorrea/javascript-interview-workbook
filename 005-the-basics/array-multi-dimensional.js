@@ -17,3 +17,7 @@ for( let rowIdx = 0 ; rowIdx < matrix2.length ; ++rowIdx) {
     console.log(`matrix[${rowIdx}][${colIdx}] = ${matrix2[rowIdx][colIdx]}`)
   }
 }
+
+// flattened  Array bidimensional
+let values = matrix2.flat();
+console.log(values);
