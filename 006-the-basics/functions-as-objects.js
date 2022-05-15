@@ -4,3 +4,8 @@ function myFunction () {
 }
 
 console.log( typeof myFunction);
+console.log(myFunction.name);
+console.log(myFunction.arguments);
+console.log(myFunction.length);
+// Number of arguments passed to function
+console.log(myFunction.prototype)
