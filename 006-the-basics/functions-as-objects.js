@@ -11,5 +11,6 @@ console.log(myFunction.length);
 console.log(myFunction.prototype)
 
 // Parameters
-const sayHello = personName =>  console.log(`${personName}`);
+const sayHello = personName =>  console.log(`Hello ${personName}`);
 sayHello("Maximiliano Correa");
+sayHello();
