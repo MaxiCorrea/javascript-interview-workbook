@@ -17,3 +17,10 @@ sayHello();
 
 const sum = (a, b, c) => a + b + c;
 console.log(sum(2, 3, 4));
+
+// Arguments Parameters
+function game  (a ,b ,c)  {
+  console.log("Arguments " + arguments.length);
+}
+game();
+game(1,3,4);
