@@ -14,5 +14,10 @@ let handler = function () {
   const date = new Date();
   const time = date.toLocaleTimeString();
   console.log(time);
-}
+};
 let timer = setInterval(handler, 1000);
+
+//Immediately invoked function expressions (IIFE)
+(function () {
+  console.log("run immediately");
+})();
